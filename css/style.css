@@ -1,8 +1,210 @@
-/*Ini CSS*/
-.banner {
-    background-image: url(https://picsum.photos/200);
+/* body */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: auto;
+    font-size: 12px;
+    font-family: Inter;
+}
+h1, h2 {
+    margin: auto;
+    text-align: center;
+}
+hr {
+    margin: auto;
+}
+
+/* Styling */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 4%;
+}
+hr.short-edge {
+    border: 2px solid lightgrey;
+    width: 8vw;
+    border-radius: 4px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 4%;
+}
+header > div.logo {
+    display: flex;
+}
+header > div.logo > div.home-icon {
+    background-image: url(/assets/logo-icon.svg);
     background-position: center;
     background-size: cover;
-    width: 480px;
-    height: 480px;
+    width: 4vw;
+    height: 4vw;
+    margin-right: 1vw;
+}
+header > div > span {
+    align-content: center;
+    font-size: x-large;
+}
+header > nav {
+    display: flex;
+}
+header > nav > a {
+    text-decoration: none;
+    border: 0.8px solid;
+    padding: 8px 16px;
+    color: black ;
+}
+header > nav > a:hover {
+    background-color: blue;
+}
+
+
+/* Main */
+main {
+    
+}
+
+/* Main => Section Home */
+section#home {
+    display: flex;
+    flex-direction: column;
+}
+section#home > h1.title {
+    padding-top: 8vw;
+    font-size: xxx-large;
+    padding-bottom: 4vw;
+}
+section#home > p.description {
+    font-size: medium;
+    text-align: center;
+    margin: 0vw 4%;
+}
+section#home > div.container {
+    padding: 4vw 0vw 1vw;
+    height: fit-content;
+}
+section#home > div.container > div.banner {
+    width: 100%;
+    margin-right: 4vw;
+}
+section#home > div.container > div.banner > div.banner-image {
+    background-image: url(https://picsum.photos/800);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 72%;
+    margin-bottom: 2vw;
+    border-radius: 0.6vw;
+}
+section#home > div.container > div.banner > div.testimoni-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0vw 4vw;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vw;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > p.review {
+    font-size: larger;
+    font-weight: 300;
+    font-style: italic;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > div.reviewer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > div.reviewer > div.picture {
+    background-image: url(https://xsgames.co/randomusers/assets/avatars/female/63.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 4.8vw;
+    width: 4.8vw;
+    border-radius: 50%;
+    margin-right: 2vw;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > div.reviewer > div.information {
+    display: flex;
+    flex-direction: column;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > div.reviewer > div.information > span.name {
+    font-size: larger;
+    font-weight: bolder;
+    margin-bottom: 0.4vw;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > div.reviewer > div.information > span.job {
+    font-weight: 300;
+    font-style: italic;
+}
+/* Main -> Section Home -> Container -> Aside */
+section#home > div.container > aside {
+    background-color: whitesmoke;
+    padding: 4%;
+    height: fit-content;
+    border-radius: 0.6vw;
+}
+section#home > div.container > aside > h4 {
+    text-align: left;
+    font-size: medium;
+}
+
+/* Main -> Section Home -> Container -> Aside -> Form */
+section#home > div.container > aside > form {
+
+}
+section#home > div.container > aside > form > label {
+    font-weight: bolder;
+}
+section > div.container > aside > form > input {
+    margin: 1vw 0vw;
+    padding: 1vw;
+    width: -webkit-fill-available;
+}
+section > div.container > aside > form > input[type="submit" i] {
+    border: 0px;
+    background-color: darkslategrey;
+    font-weight: bolder;
+    color: white;
+}
+section#home > div.container > aside > form > select {
+    padding: 1vw;
+    margin: 1vw 0vw;
+    width: -webkit-fill-available;
+}
+
+/* Main -> Section Home -> Article */
+section#home > article {
+    padding: 0vw 4vw;
+    display: flex;
+    width: 52%;
+    flex-direction: column;
+}
+section#home > article > p {
+    font-size: larger;
+    font-weight: normal;
+}
+section#home > article > div.feature-list {
+    display: flex;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+section#home > article > div.feature-list > div {
+    display: flex;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 50%;
+    color: darkslategrey;
+    padding: 1vw 1.8vw;
+    background-color: whitesmoke;
+    margin-right: 2vw;
+}
+section#home > article > div.feature-list > span {
+    align-items: center;
+    display: flex;
 }

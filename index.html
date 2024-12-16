@@ -4,119 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <!-- Menghubungkan Favicon dari folder assets ke index.html -->
+     <link rel="shortcut icon" href="assets/logo-icon-white.ico" type="image/x-icon">
     <!-- Menghubungkan CSS styles.css dari folder css ke index.html -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Menghubungkan Font Family Inter dari Google Fonts ke index.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header>
         <!-- Ikon Home -->
-        <div class="home-icon"></div>
+         <div class="logo">
+             <div class="home-icon"></div>
+             <span>Tragent</span>
+         </div>
         <!-- Link navigasi -->
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Our Package</a>
-            <a href="#">Call Us</a>
+            <a href="#home">Beranda</a>
+            <a href="#our-package">Paket</a>
+            <a href="#call-us">Hubungi Kami</a>
         </nav>
     </header>
+    <hr>
 
     <!-- Konten -->
     <main>
         <!-- Home/Banner Section -->
-        <h1 class="title">Your Trusted Travel Agent's</h1>
-        <h4 class="description">Your happiness is our happiness</h4>
+         <section id="home">
+             <h1 class="title">Travel Agent's kamu yang Terpercaya!</h1>
+             <p class="description">Petualangan kamu adalah kebahagian kami dalam membantu kamu merasakan pengalaman baru dalam hidup</p>
+             <div class="container">
+                 <div class="banner">
+                     <div class="banner-image">
+         
+                     </div>
+                     <div class="testimoni-container">
+                         <div class="testimoni-content">
+                             <p class="review">"Liburan jadi menyenangkan bersama Travel Agent ku"</p>
+                             <div class="reviewer">
+                                 <div class="picture"></div>
+                                 <div class="information">
+                                     <span class="name">Yakomina Rumaropen</span>
+                                     <span class="job">Ibu Rumah Tangga, 28</span>
+                                 </div>
+                             </div>
+                         </div>
+                         <hr class="short-edge">
+                     </div>
+                 </div>
+                 <aside>
+                    <h4>Hubungi Kami</h4>
+                    <p>Kami akan menghubungi Anda dalam 24 jam setelah menentukan tujuan liburan kamu </p>
+                     <form action="" autocomplete="on">
+                         <label for="full-name">Nama:</label><br>
+                         <input type="text" id="full-name" placeholder="Nama Lengkap" autocapitalize="words"><br><br>
+                         <label for="email-address">Alamat email:</label><br>
+                         <input type="email" id="email-address" placeholder="example@email.com" required><br><br>
+                         <label for="interest">Kamu lagi ingin liburan kemana?</label><br>
+                         <select name="interest" id="interest">
+                             <option value="beach">Pantai</option>
+                             <option value="sea">Laut</option>
+                             <option value="mountain">Gunung</option>
+                         </select><br><br>
+                         <input type="submit" value="Ayo berangkat!">
+                     </form>
+                 </aside>
+             </div>
+             <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error consectetur debitis nisi fugiat animi, illum pariatur perferendis? Expedita, ex!</p>
 
-        <div class="banner">
-            <div class="banner-image">
-
-            </div>
-            <div class="testimoni-container">
-                <div class="testimoni-content">
-                    <div class="review">"Liburan jadi menyenangkan bersama Travel Agentku"</div>
-                    <div class="picture"></div>
-                    <div class="information">
-                        <span>Florence Hughes</span>
-                        <span>Ibu Rumah Tangga, 28</span>
-                    </div>
+                <div class="feature-list">
+                    <div>1</div>
+                    <span>Your first feature, written in the form a benefit statement</span>
                 </div>
-                <div class="testimoni-features">
-                    <div class="features-description">Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service  or product</div>
-                    <div class="features-list">
-                        <div>1</div>
-                        <div class="list-description">Your first feature written in the form of a benefit statement.</div>
-                        <div>2</div>
-                        <div class="list-description">Your second feature written in the form of a benefit statement.</div>
-                        <div>3</div>
-                        <div class="list-description">Your third feature written in the form of benefit statement.</div>
-                    </div>
+                <div class="feature-list">
+                    <div>2</div>
+                    <span>Your first feature, written in the form a benefit statement</span>
                 </div>
-            </div>
-        </div>
-        <aside>
-            <form action="" autocomplete="on">
-                <label for="full-name">Your Name:</label><br>
-                <input type="text" id="full-name" placeholder="Full Name" autocapitalize="words"><br><br>
-                <label for="email-address">Email Address:</label><br>
-                <input type="email" id="email-address" placeholder="name@mail.com" required><br><br>
-                <label for="interest">What are you interested in?</label><br>
-                <select name="interest" id="interest">
-                    <option value="option-1">Option 1</option>
-                    <option value="option-2">Option 2</option>
-                    <option value="option-3">Option 3</option>
-                </select><br><br>
-                <input type="submit" value="Send">
-            </form>
-        </aside>
+                <div class="feature-list">
+                    <div>3</div>
+                    <span>Your first feature, written in the form a benefit statement</span>
+                </div>
+             </article>
+         </section>
 
         <!-- Our Package Section -->
-        <h2>Our Package</h2>
-        <div class="features-list">
-            <div class="list-icon"></div>
-            <div class="list-destinaton">Bali</div>
-            <div class="list-description">Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</div>
-        </div>
-        <div class="features-list">
-            <div class="list-icon"></div>
-            <div class="list-destinaton">Japan</div>
-            <div class="list-description">Travel dan wisata di Japan, kunjungi cagar budaya dan kuliner yang menarik</div>
-        </div>
-        <div class="features-list">
-            <div class="list-icon"></div>
-            <div class="list-destinaton">Singapore</div>
-            <div class="list-description">Travel dan wisata di Singapore, kunjungi cagar budaya dan kuliner yang menarik</div>
-        </div>
-        <div class="features-list">
-            <div class="list-icon"></div>
-            <div class="list-destinaton">Bandung</div>
-            <div class="list-description">Travel dan wisata di Bandung, kunjungi cagar budaya dan kuliner yang menarik</div>
-        </div>
-        <div class="features-list">
-            <div class="list-icon"></div>
-            <div class="list-destinaton">Surabaya</div>
-            <div class="list-description">Travel dan wisata di Surabaya, kunjungi cagar budaya dan kuliner yang menarik</div>
-        </div>
-        <div class="features-list">
-            <div class="list-icon"></div>
-            <div class="list-destinaton">Third Feature</div>
-            <div class="list-description">Travel dan wisata di Third Feature, kunjungi cagar budaya dan kuliner yang menarik</div>
-        </div>
 
         <!-- Call Action Section -->
-         <h2>Your closing argument headline</h2>
-         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at repudiandae quod molestiae expedita, eos maiores ducimus ab. Iure, asperiores!</h4>
-         <button>Call To Action</button>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="home-icon">
-            <li>
-                <ul>Terms of Service</ul>
-                <ul>Privacy Policy</ul>
-            </li>
-        </div>
-        <span>Made with &heartsuit; by Ghalib Putra</span>
-    </footer>
     
     <!-- Menghubungkan Javascript script.js dari folder js ke index.html -->
     <script src="js/script.js"></script>
