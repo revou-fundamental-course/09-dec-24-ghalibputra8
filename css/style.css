@@ -9,6 +9,7 @@ body {
 h1, h2 {
     margin: auto;
     text-align: center;
+    font-size: xx-large;
 }
 hr {
     margin: auto;
@@ -28,16 +29,16 @@ hr.short-edge {
 }
 
 /* Header */
-header {
+header.nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2% 4%;
 }
-header > div.logo {
+header.nav-header > div.logo {
     display: flex;
 }
-header > div.logo > div.home-icon {
+header.nav-header > div.logo > div.home-icon {
     background-image: url(/assets/logo-icon.svg);
     background-position: center;
     background-size: cover;
@@ -45,20 +46,21 @@ header > div.logo > div.home-icon {
     height: 4vw;
     margin-right: 1vw;
 }
-header > div > span {
+header.nav-header > div > span {
     align-content: center;
     font-size: x-large;
+    cursor: default;
 }
-header > nav {
+header.nav-header > nav {
     display: flex;
 }
-header > nav > a {
+header.nav-header > nav > a {
     text-decoration: none;
     border: 0.8px solid;
     padding: 8px 16px;
     color: black ;
 }
-header > nav > a:hover {
+header.nav-header > nav > a:hover {
     background-color: blue;
 }
 
@@ -67,8 +69,11 @@ header > nav > a:hover {
 main {
     
 }
+main > section {
+    margin-bottom: 4vw;
+}
 
-/* Main => Section Home */
+/* Main -> Section Home */
 section#home {
     display: flex;
     flex-direction: column;
@@ -171,11 +176,13 @@ section > div.container > aside > form > input[type="submit" i] {
     background-color: darkslategrey;
     font-weight: bolder;
     color: white;
+    cursor: pointer;
 }
 section#home > div.container > aside > form > select {
     padding: 1vw;
     margin: 1vw 0vw;
     width: -webkit-fill-available;
+    cursor: pointer;
 }
 
 /* Main -> Section Home -> Article */
@@ -207,4 +214,49 @@ section#home > article > div.feature-list > div {
 section#home > article > div.feature-list > span {
     align-items: center;
     display: flex;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Main -> Section Our Package */
+section#our-package {
+    width: auto;
+}
+
+section#our-package > article > div.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+}
+
+/* Main -> Section Our Package -> Header */
+section#our-package > header.our-package-header {
+    background-color: whitesmoke;
+    padding: 8vw 0vw;
+}
+
+/*  */
+section#our-package > article > div.container {
+    padding: 8vw 0vw;
+}
+section#our-package > article > div.container > div.container-item {
+    display: flex;
+    flex-direction: row;
+}
+section#our-package > article > div.container > div.container-item > div.point-icon {
+    background-color: black;
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+    margin-right: 2vw;
+}
+
+/* Main -> Section Our Package -> Article -> Container -> Point Content */
+section#our-package > article > div.container > div.container-item > div.point-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+section#our-package > article > div.container > div.container-item > div.point-content > h3.content-title {
+    font-size: medium;
+    margin: 1vw 0vw;
 }
