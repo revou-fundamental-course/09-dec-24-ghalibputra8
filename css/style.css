@@ -183,6 +183,12 @@ section#home > div.container > aside > form > select {
     margin: 1vw 0vw;
     width: -webkit-fill-available;
     cursor: pointer;
+    appearance: none;
+    background-color: white;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9a/Caret_down_font_awesome.svg) 98% /8% no-repeat; 
+}
+section#home > div.container > aside > form > select#interest {
+    background-color: white;
 }
 
 /* Main -> Section Home -> Article */
@@ -236,7 +242,7 @@ section#our-package > header.our-package-header {
 
 /*  */
 section#our-package > article > div.container {
-    padding: 8vw 0vw;
+    padding: 6vw 0vw;
 }
 section#our-package > article > div.container > div.container-item {
     display: flex;
@@ -259,4 +265,26 @@ section#our-package > article > div.container > div.container-item > div.point-c
 section#our-package > article > div.container > div.container-item > div.point-content > h3.content-title {
     font-size: medium;
     margin: 1vw 0vw;
+}
+
+/* Main -> Section Call Us */
+section#call-us > header {
+    margin: 8% 0% 4%;
+}
+section#call-us > article {
+    margin: 0% 4%;
+    text-align: center;
+}
+section#call-us > article > p {
+    margin-bottom: 4vw;
+    font-size: medium;
+}
+section#call-us > article > button[type="submit"] {
+    border: 0px;
+    background-color: darkslategrey;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    margin: 1vw 0vw;
+    padding: 2vw 4vw;
 }
