@@ -288,3 +288,48 @@ section#call-us > article > button[type="submit"] {
     margin: 1vw 0vw;
     padding: 2vw 4vw;
 }
+
+/* Footer */
+footer {
+    margin: 4%;
+}
+footer > div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw 0vw;
+}
+footer > div.logo > div.home-icon {
+    background-image: url(/assets/logo-icon.svg);
+    background-position: center;
+    background-size: cover;
+    width: 4vw;
+    height: 4vw;
+    margin-right: 1vw;
+}
+footer > div.logo > span {
+    align-content: center;
+    font-size: x-large;
+    cursor: default;
+}
+footer > ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 0vw;
+    padding: 0vw;
+}
+footer > ul > li {
+    cursor: default;
+}
+footer > ul > ul {
+    padding: 0vw 0vw 1vw;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+footer > ul > ul > li {
+    padding: 0vw 0.8vw;
+    cursor: default;
+}
