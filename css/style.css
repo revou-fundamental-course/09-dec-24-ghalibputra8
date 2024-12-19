@@ -11,9 +11,7 @@ h1, h2 {
     text-align: center;
     font-size: xxx-large;
 }
-hr {
-    margin: unset;
-}
+
 
 /* Styling */
 .container {
@@ -142,7 +140,7 @@ section#home > div.container > div.banner > div.testimoni-container {
 section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1vw;
+    margin-bottom: 4vw;
 }
 section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > p.review {
     font-size: larger;
@@ -295,13 +293,13 @@ section#our-package > article > div.container > div.container-item {
     flex-direction: row;
     width: 30%;
 }
-section#our-package > article > div.container > div.container-item 2 {
+section#our-package > article > div.container > div.container-item .2 {
     padding: 0vw 4vw;
 }
 section#our-package > article > div.container > div.container-item > div.point-icon {
     background-color: black;
     border-radius: 50%;
-    width: 6vw;
+    width: 8vw;
     height: 3.5vw;
     margin-right: 2vw;
 }
@@ -397,9 +395,7 @@ footer > ul > ul > li {
 h1, h2 {
     font-size: xx-large;
 }
-hr.short-edge {
-    margin: 4vw 45% 0vw;
-}
+
 p {
     font-size: large;
 }
