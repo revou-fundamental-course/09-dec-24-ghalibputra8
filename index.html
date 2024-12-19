@@ -37,8 +37,20 @@
              <h1 class="title">Travel Agent's kamu yang Terpercaya!</h1>
              <p class="description">Petualangan kamu adalah kebahagian kami dalam membantu kamu merasakan pengalaman baru dalam hidup</p>
              <div class="container">
+                <!-- Auto Slide Image -->
                  <div class="banner">
-                     <div class="banner-image"></div>
+                     <div class="slideshow-container">
+                        <div class="mySlides fade">
+                          <img src="https://pixabay.com/get/gd3c9e902517b1f2eafe492f3df99e6753bd4d8af45a1bba2b7fe7b08f5f873569a0b384504cfc9effb15d7ddd3b76d27_1280.jpg">
+                        </div>
+                        <div class="mySlides fade">
+                          <img src="https://pixabay.com/get/g3e8ceedda23d76e8a7eb4a888be71b3f8f5c0b8ca68ae0c509919f50c1af0d1130c960eca08911ad598155e88f637ba2_1280.jpg">
+                        </div>
+                        <div class="mySlides fade">
+                          <img src="https://pixabay.com/get/gcbaf055b6088df65af4877552528283a1dc76ff403bd71933354da103d5b596dcf0504588279a26384d2cdc99ca24c7c_1280.jpg">
+                        </div>
+                      </div>
+
                      <div class="testimoni-container">
                          <div class="testimoni-content">
                              <p class="review">"Liburan jadi menyenangkan bersama Travel Agent ku"</p>
@@ -53,16 +65,18 @@
                          <hr class="short-edge">
                      </div>
                  </div>
+
+                 <!-- Formulir Contact Us -->
                  <aside>
                     <h4>Hubungi Kami</h4>
-                    <p>Kami akan menghubungi Anda dalam 24 jam setelah menentukan tujuan liburan kamu </p>
-                     <form action="" autocomplete="on">
+                    <p>Kami akan menghubungi kamu dalam 24 jam setelah menentukan tujuan liburan kamu </p>
+                     <form name="myForm" onsubmit="return validateForm()" autocomplete="on">
                          <label for="full-name">Nama:</label><br>
-                         <input type="text" id="full-name" placeholder="Nama Lengkap" autocapitalize="words"><br><br>
+                         <input type="text" name="full-name" id="full-name" placeholder="Nama Lengkap" autocapitalize="words"><br><br>
                          <label for="email-address">Alamat email:</label><br>
-                         <input type="email" id="email-address" placeholder="example@email.com" required><br><br>
+                         <input type="email" name="email-address" id="email-address" placeholder="example@email.com" required><br><br>
                          <label for="interest">Kamu lagi ingin liburan kemana?</label><br>
-                         <select name="interest" id="interest">
+                         <select name="interest" id="interest" required>
                              <option value="default">Coba deh pilih dulu</option>
                              <option value="beach">Pantai</option>
                              <option value="sea">Laut</option>
@@ -93,28 +107,28 @@
         <!-- Our Package Section -->
          <section id="our-package">
             <header class="our-package-header">
-                <h2>Our Package</h2>
+                <h2>Pilihan pengalaman baru yang mau kamu rasakan</h2>
             </header>
             <article>
                 <div class="container">
                     <div class="container-item">
                         <div class="point-icon"></div>
                         <div class="point-content">
-                            <h3 class="content-title">Bali</h3>
+                            <h3 class="content-title">Misool</h3>
                             <div class="content-description">Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</div>
                         </div>
                     </div>
                     <div class="container-item">
                         <div class="point-icon"></div>
                         <div class="point-content">
-                            <h3 class="content-title">Bali</h3>
+                            <h3 class="content-title">Waisai</h3>
                             <div class="content-description">Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</div>
                         </div>
                     </div>
                     <div class="container-item">
                         <div class="point-icon"></div>
                         <div class="point-content">
-                            <h3 class="content-title">Bali</h3>
+                            <h3 class="content-title">Maybrat</h3>
                             <div class="content-description">Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</div>
                         </div>
                     </div>
@@ -158,7 +172,9 @@
                     CALL TO ACTION
                 </button>
             </article>
+            <hr>
          </section>
+
     </main>
 
     <!-- Footer -->

@@ -16,7 +16,6 @@ hr {
 }
 
 /* Styling */
-
 .container {
     display: flex;
     justify-content: space-between;
@@ -42,8 +41,8 @@ header.nav-header > div.logo > div.home-icon {
     background-image: url(/assets/logo-icon.svg);
     background-position: center;
     background-size: cover;
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
     margin-right: 1vw;
 }
 header.nav-header > div > span {
@@ -51,6 +50,8 @@ header.nav-header > div > span {
     font-size: x-large;
     cursor: default;
 }
+
+/* Header -> Nav */
 header.nav-header > nav {
     display: flex;
 }
@@ -64,6 +65,26 @@ header.nav-header > nav > a:hover {
     background-color: blue;
 }
 
+/* Image Auto Slide */
+.banner > .slideshow-container {
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+display: none;
+}
+.mySlides > img {
+    width: 100%;
+    height: 38vw;
+}
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
 
 /* Main */
 main {
@@ -81,29 +102,36 @@ section#home {
 section#home > h1.title {
     padding-top: 8vw;
     font-size: xxx-large;
-    padding-bottom: 4vw;
+    padding-bottom: 2vw;
 }
 section#home > p.description {
     font-size: medium;
     text-align: center;
-    margin: 0vw 4%;
+    margin: 2% 4%;
 }
 section#home > div.container {
     padding: 4vw 0vw 1vw;
     height: fit-content;
+    position: relative;
 }
 section#home > div.container > div.banner {
     width: 100%;
     margin-right: 4vw;
 }
 section#home > div.container > div.banner > div.banner-image {
-    background-image: url(https://picsum.photos/800);
+    /* background-image: url(https://picsum.photos/800); */
     background-position: center;
     background-size: cover;
-    width: 100%;
-    height: 72%;
+    /* width: 100%;
+    height: 72%; */
     margin-bottom: 2vw;
     border-radius: 0.6vw;
+    display: none;
+}
+section#home > div.container > div.banner > div.banner-image > img {
+    width: 100%;
+    height: 72%;
+    overflow: hidden;
 }
 section#home > div.container > div.banner > div.testimoni-container {
     display: flex;
@@ -126,7 +154,7 @@ section#home > div.container > div.banner > div.testimoni-container > div.testim
     margin-bottom: 1vw;
 }
 section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > div.reviewer > div.picture {
-    background-image: url(https://xsgames.co/randomusers/assets/avatars/female/63.jpg);
+    background-image: url("https://static.vecteezy.com/system/resources/previews/048/633/514/large_2x/model-at-desk-with-desktop-setup-background-free-photo.jpg");
     background-position: center;
     background-size: cover;
     height: 4.8vw;
@@ -204,8 +232,8 @@ section#home > article > p {
 }
 section#home > article > div.feature-list {
     display: flex;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    margin-top: 0.6vw;
+    margin-bottom: 0.6vw;
 }
 section#home > article > div.feature-list > div {
     display: flex;
@@ -213,9 +241,12 @@ section#home > article > div.feature-list > div {
     font-weight: bold;
     border-radius: 50%;
     color: darkslategrey;
-    padding: 1vw 1.8vw;
     background-color: whitesmoke;
     margin-right: 2vw;
+    width: 3vw;
+    height: 3vw;
+    align-items: center;
+    justify-content: center;
 }
 section#home > article > div.feature-list > span {
     align-items: center;
@@ -231,7 +262,8 @@ section#our-package {
 section#our-package > article > div.container {
     display: flex;
     flex-direction: row;
-    justify-content: normal;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /* Main -> Section Our Package -> Header */
@@ -240,7 +272,7 @@ section#our-package > header.our-package-header {
     padding: 8vw 0vw;
 }
 
-/*  */
+/* Main -> Section Our Package -> Article */
 section#our-package > article > div.container {
     padding: 6vw 0vw;
 }
@@ -251,12 +283,10 @@ section#our-package > article > div.container > div.container-item {
 section#our-package > article > div.container > div.container-item > div.point-icon {
     background-color: black;
     border-radius: 50%;
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
     margin-right: 2vw;
 }
-
-/* Main -> Section Our Package -> Article -> Container -> Point Content */
 section#our-package > article > div.container > div.container-item > div.point-content {
     display: flex;
     flex-direction: column;
@@ -268,11 +298,19 @@ section#our-package > article > div.container > div.container-item > div.point-c
 }
 
 /* Main -> Section Call Us */
+section#call-us {
+    
+}
+
+/* Main -> Section Call Us -> Header */
 section#call-us > header {
     margin: 8% 0% 4%;
 }
+
+/* Main -> Section Call Us -> Article */
 section#call-us > article {
     margin: 0% 4%;
+    margin-bottom: 4vw;
     text-align: center;
 }
 section#call-us > article > p {
@@ -286,7 +324,7 @@ section#call-us > article > button[type="submit"] {
     color: white;
     cursor: pointer;
     margin: 1vw 0vw;
-    padding: 2vw 4vw;
+    padding: 1vw;
 }
 
 /* Footer */
