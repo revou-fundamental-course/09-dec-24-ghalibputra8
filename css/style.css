@@ -37,7 +37,7 @@ header.nav-header > div.logo {
     align-items: center;
 }
 header.nav-header > div.logo > div.home-icon {
-    background-image: url(/assets/logo-icon.svg);
+    background-image: url("https://revou-fundamental-course.github.io/09-dec-24-ghalibputra8/assets/logo-icon.svg");
     background-position: center;
     background-size: cover;
     width: 3vw;
@@ -354,7 +354,7 @@ footer > div.logo {
     margin: 2vw 0vw;
 }
 footer > div.logo > div.home-icon {
-    background-image: url(/assets/logo-icon.svg);
+    background-image: url("https://revou-fundamental-course.github.io/09-dec-24-ghalibputra8/assets/logo-icon.svg");
     background-position: center;
     background-size: cover;
     width: 4vw;
